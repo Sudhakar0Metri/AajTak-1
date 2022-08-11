@@ -23,6 +23,9 @@ public class StoryDetail {
 	@AndroidFindBy(id = "in.AajTak.headlines:id/btn_okay")
     private AndroidElement tikeSamajAgaya;
 	
+	@AndroidFindBy(id = "in.AajTak.headlines:id/moreOptions")
+    private AndroidElement moreOptions;
+	
 	@AndroidFindBy(accessibility = "More options")
     private AndroidElement actionOverflowBtn;
 	
@@ -75,6 +78,10 @@ public class StoryDetail {
 
 	public AndroidElement getTikeSamajAgaya() {
 		return tikeSamajAgaya;
+	}
+	
+	public AndroidElement getmoreOptions() {
+		return moreOptions;
 	}
 
 	public AndroidElement getActionOverflowBtn() {

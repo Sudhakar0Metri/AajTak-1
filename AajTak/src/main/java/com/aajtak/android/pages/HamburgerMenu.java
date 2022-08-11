@@ -30,6 +30,13 @@ public static AndroidDriver<AndroidElement> aDriver;
 	@AndroidFindBy(id = "in.AajTak.headlines:id/rel_savedcontents")
     private AndroidElement downloadInHamburgerMenu;
 	
+	@AndroidFindBy(id = "in.AajTak.headlines:id/ivDownloaded")
+    private AndroidElement downloadcontentInHamburgerMenu;
+	
+	public AndroidElement getDownloadcontentInHamburgerMenu() {
+		return downloadcontentInHamburgerMenu;
+	}
+
 	@AndroidFindBy(id = "in.AajTak.headlines:id/rel_settings")
     private AndroidElement bookmarkInHamburgerMenu;
 	

@@ -22,12 +22,12 @@ public class TC_AT_PermissionMessage_002 extends Aajtak_app_Util {
 		launchApp();
 		
 		//Waiting till the shuru kare element is present for 30 secs
-//		waitTillElementPresent(shuruKarienOnboarding.getShuruKarein(), 30);
-		waitTillElementPresent(shuruKarienOnboarding.getAageBado(), 30);
+		waitTillElementPresent(shuruKarienOnboarding.getShuruKarein(), 30);
+//		waitTillElementPresent(shuruKarienOnboarding.getAageBado(), 30);
 		
 		//clicking on shuru karen button
-//		clickBtn(shuruKarienOnboarding.getShuruKarein());
-		clickBtn(shuruKarienOnboarding.getAageBado());
+		clickBtn(shuruKarienOnboarding.getShuruKarein());
+//		clickBtn(shuruKarienOnboarding.getAageBado());
 		
 		//clicking one aage bade option
 		clickBtn(notificatonPayeOnboarding.getAageBade());

@@ -64,7 +64,7 @@ public class AppiumService extends GlobalVariables {
 		builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
 		builder.withArgument(GeneralServerFlag.LOG_LEVEL,"error");
 
-		//	if (!this.checkIfServerIsRunning(port)) {
+//		if (!this.checkIfServerIsRunning(port)) {
 		//Start the server with the builder
 		service = AppiumDriverLocalService.buildService(builder);
 		service.start();

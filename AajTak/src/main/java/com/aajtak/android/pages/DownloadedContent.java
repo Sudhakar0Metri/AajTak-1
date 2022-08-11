@@ -32,6 +32,17 @@ public class DownloadedContent {
 	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='in.AajTak.headlines:id/tv_nodata']")
 	private AndroidElement contentMessage;
 	
+	public AndroidElement getNewcontentMessage() {
+		return newcontentMessage;
+	}
+
+	public AndroidElement getToastmsg() {
+		return toastmsg;
+	}
+
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='आपने कुछ भी डाउनलोड नहीं किया है']")
+	private AndroidElement newcontentMessage;
+	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@resource-id='in.AajTak.headlines:id/ed_save']")
 	private AndroidElement sabhiSafKaren;
 	

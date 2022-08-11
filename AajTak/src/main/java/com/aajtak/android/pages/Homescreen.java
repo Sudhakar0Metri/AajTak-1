@@ -29,6 +29,9 @@ public class Homescreen {
 
 	@AndroidFindBy(id = "in.AajTak.headlines:id/hamburgur_icon")
 	private AndroidElement hamburgerIcon;
+	
+	@AndroidFindBy(id = "in.AajTak.headlines:id/hamburgerIcon")
+	private AndroidElement newhamburgerIcon;
 
 	@AndroidFindBy(id = "in.AajTak.headlines:id/tv_topnews_dailycap_message")
 	private AndroidElement dailycapBannerMessage;
@@ -72,6 +75,10 @@ public class Homescreen {
 
 	@AndroidFindBy(id = "in.AajTak.headlines:id/photostroy_desc")
 	private AndroidElement photoStoryDesc;
+	
+	@AndroidFindBy(id = "in.AajTak.headlines:id/ivHBILargeImg")
+	private AndroidElement largephotooffirststory;
+	
 
 	// Other Stories title
 	@AndroidFindBy(id = "in.AajTak.headlines:id/tv_title")
@@ -89,8 +96,15 @@ public class Homescreen {
 
 	@AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id='in.AajTak.headlines:id/btn_play'])[1]")
 	private AndroidElement firstVideoInHomeScreen;
+	
+	@AndroidFindBy(id = "in.AajTak.headlines:id/tvRelatedNews")
+	private AndroidElement firstVideonewsInHomeScreen;
 
 	// Title Of Photo in Homescreen
+
+	public AndroidElement getFirstVideonewsInHomeScreen() {
+		return firstVideonewsInHomeScreen;
+	}
 
 	@AndroidFindBy(id = "in.AajTak.headlines:id/tv_title")
 	private AndroidElement photoTitle;
@@ -112,6 +126,9 @@ public class Homescreen {
 
 	@AndroidFindBy(xpath = "(//android.widget.LinearLayout[@resource-id='in.AajTak.headlines:id/view_pager']//following::android.widget.ImageView[@resource-id='in.AajTak.headlines:id/slide_imageView'])[1]")
 	private AndroidElement firstGalleryInHomeScreen;
+	
+	@AndroidFindBy(xpath = "(//android.view.ViewGroup[@resource-id='in.AajTak.headlines:id/clPhotoOrVideo'])")
+	private AndroidElement firstVideoorPhotoInHomeScreen;
 	
 	@AndroidFindBy(id = "in.AajTak.headlines:id/lav_loader")
 	private AndroidElement homeScreenLoading;
@@ -224,16 +241,16 @@ public class Homescreen {
 	@AndroidFindBy(id="in.AajTak.headlines:id/bottom_list")
 	private AndroidElement bottomList;
 
-	@AndroidFindBy(id = "in.AajTak.headlines:id/ic_comment")
+	@AndroidFindBy(id = "in.AajTak.headlines:id/ivBottomComment")
 	private AndroidElement commentIcon;
 
-	@AndroidFindBy(xpath = "//android.widget.ImageView [@resource-id=\"in.AajTak.headlines:id/ic_download\"]")
+	@AndroidFindBy(xpath = "//android.widget.ImageView [@resource-id=\"in.AajTak.headlines:id/ivBottomDownload\"]")
 	private AndroidElement offlineIcon;
 
-	@AndroidFindBy(id = "in.AajTak.headlines:id/ic_bookmark")
+	@AndroidFindBy(id = "in.AajTak.headlines:id/ivBottomBookmark")
 	private AndroidElement bookmarkIcon;
 
-	@AndroidFindBy(id = "in.AajTak.headlines:id/ic_share")
+	@AndroidFindBy(id = "in.AajTak.headlines:id/ivBottomShare")
 	private AndroidElement shareIcon;
 
 	@AndroidFindBy(xpath = "//android.widget.Toast[1]")
@@ -295,11 +312,37 @@ public class Homescreen {
 
 	@AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='in.AajTak.headlines:id/news_description'])[1]")
 	private AndroidElement storyInHomeScreen;
+	
+	@AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='in.AajTak.headlines:id/tvNewsTitle'])[1]")
+	private AndroidElement storyTitleInHomeScreen;
+
+	public static AndroidDriver<AndroidElement> getaDriver() {
+		return aDriver;
+	}
+
+	public AndroidElement getLargephotooffirststory() {
+		return largephotooffirststory;
+	}
+
+	public AndroidElement getFirstVideoorPhotoInHomeScreen() {
+		return firstVideoorPhotoInHomeScreen;
+	}
+
+	public AndroidElement getOthersStickers() {
+		return othersStickers;
+	}
+
+	public AndroidElement getStoryTitleInHomeScreen() {
+		return storyTitleInHomeScreen;
+	}
 
 	public AndroidElement getFirstStoryDesc() {
 		return firstStoryDesc;
 	}
-
+	
+	public AndroidElement getlargephotooffirststory() {
+		return largephotooffirststory;
+	}
 	public AndroidElement getPhotoStoryDesc() {
 		return photoStoryDesc;
 	}
@@ -370,6 +413,10 @@ public class Homescreen {
 
 	public AndroidElement getHamburgerIcon() {
 		return hamburgerIcon;
+	}
+	
+	public AndroidElement getNewHamburgerIcon() {
+		return newhamburgerIcon;
 	}
 	
 	public AndroidElement getDailyCapsuleBanner() {

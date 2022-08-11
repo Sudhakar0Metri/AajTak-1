@@ -22,15 +22,19 @@ public class TC_AT_Dwncnt_009 extends Aajtak_app_Util {
 			launchApp();
 			
 			//It is used to load the complete Onboarding screen
-			compelteOnboarding();
+//			compelteOnboarding();
+			compelteOnboardingCopy();
 			
 			//Click on Hamburger Menu icon
-			clickBtn(homescreen.getHamburgerIcon(), "Hambergur Menu");
+//			clickBtn(homescreen.getHamburgerIcon(), "Hambergur Menu");
+			clickBtn(homescreen.getNewHamburgerIcon(), "Hambergur Menu");
 			
 			//Click on Downloaded content in Hamburger Menu
-			clickBtn(hamburgerMenu.getDownloadInHamburgerMenu(), "Downloaded Content");
+//			clickBtn(hamburgerMenu.getDownloadInHamburgerMenu(), "Downloaded Content");
+			clickBtn(hamburgerMenu.getDownloadcontentInHamburgerMenu(), "Downloaded Content");
 			
 			//It will verify that message that if there is no any saved content in downloaded content
-			isElementExist(downloadedContent.getContentMessage());
+//			isElementExist(downloadedContent.getContentMessage());
+			isElementExist(downloadedContent.getNewcontentMessage());
 		}
 }

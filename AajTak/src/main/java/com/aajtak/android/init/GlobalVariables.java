@@ -69,7 +69,7 @@ public class GlobalVariables {
 	public static FileInputStream inputStream;
 	public static Properties properties;
 	public static String propertiesFileName = "src\\main\\resources\\EnvironmentVariables\\Config.properties";
-	public static String prodApkPath = "\\src\\main\\resources\\app-production-release.apk";
+	public static String prodApkPath = "\\src\\main\\resources\\app-production-release_9.88.4.apk";
 	public static String devApkPath = "\\src\\main\\resources\\AajTak_dev_debug_9.37.apk";
 
 	// POM page variables

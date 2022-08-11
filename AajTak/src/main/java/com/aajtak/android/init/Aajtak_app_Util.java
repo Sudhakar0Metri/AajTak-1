@@ -326,10 +326,10 @@ public class Aajtak_app_Util extends BaseUtil {
 	}
 
 	public static void compelteOnboarding() throws InterruptedException {
-//		waitTillElementPresent(shuruKarienOnboarding.getShuruKarein(), 30);
-//		clickBtn(shuruKarienOnboarding.getShuruKarein());
-		waitTillElementPresent(shuruKarienOnboarding.getAageBado(), 30);
-		clickBtn(shuruKarienOnboarding.getAageBado());
+		waitTillElementPresent(shuruKarienOnboarding.getShuruKarein(), 30);
+		clickBtn(shuruKarienOnboarding.getShuruKarein());
+//		waitTillElementPresent(shuruKarienOnboarding.getAageBado(), 30);
+//		clickBtn(shuruKarienOnboarding.getAageBado());
 		clickBtn(notificatonPayeOnboarding.getAageBade());
 		waitTillElementDisapper(homescreen.getHomeScreenLoading());
 		if (isElementDisplayed(permssionMessage.getAllowBtn())) {
@@ -346,6 +346,25 @@ public class Aajtak_app_Util extends BaseUtil {
 			}
 		}catch(Exception e){
 		}
+	}
+	public static void compelteOnboardingCopy() throws InterruptedException {
+		waitTillElementPresent(shuruKarienOnboarding.getAageBado(), 30);
+		clickBtn(shuruKarienOnboarding.getAageBado());
+		waitTillElementDisapper(homescreen.getHomeScreenLoading());
+//		if (isElementDisplayed(permssionMessage.getAllowBtn())) {
+//			clickBtn(permssionMessage.getAllowBtn());
+//		}
+//		if (isElementDisplayed(dailyHighlights.getCloseBtn())) {
+//			clickBtn(dailyHighlights.getCloseBtn(), "Daily hightlights Close Button");
+//		}
+//		try{
+//			waitTillElementPresent(homescreenWalkthrough.getPullDownBtn(), 10);
+//			if(BaseUtil.isElementDisplayed(homescreenWalkthrough.getPullDownBtn()));
+//			{
+//				Aajtak_app_Util.clickBtn(homescreenWalkthrough.getPullDownBtn(),"HomeScreen Walkthrough");
+//			}
+//		}catch(Exception e){
+//		}
 	}
 	public AndroidElement getTitleText(String title) {
 		return aDriver.findElementByXPath("//android.widget.TextView[@text=\'" + title + "\']");
