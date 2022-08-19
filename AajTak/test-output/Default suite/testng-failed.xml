@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.aajtak.android.PermissionMessage.TC_AT_PermissionMessage_001">
+      <class name="com.aajtak.android.Hamburger_DownloadedContent.TC_AT_Dwncnt_009">
         <methods>
           <include name="fileConfiguration"/>
           <include name="loadLog4j"/>
-          <include name="AT_PermissionMessage_001"/>
           <include name="startServer"/>
           <include name="setUp"/>
+          <include name="AT_Dwncnt_009"/>
         </methods>
-      </class> <!-- com.aajtak.android.PermissionMessage.TC_AT_PermissionMessage_001 -->
+      </class> <!-- com.aajtak.android.Hamburger_DownloadedContent.TC_AT_Dwncnt_009 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

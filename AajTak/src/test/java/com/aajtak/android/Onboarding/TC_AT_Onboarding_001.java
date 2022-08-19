@@ -26,12 +26,12 @@ public class TC_AT_Onboarding_001 extends Aajtak_app_Util {
 		launchApp();
 
 		// Wait till the onboarding screen is displayed
-//		waitTillElementPresent(shuruKarienOnboarding.getShuruKarein(), 20);
-		waitTillElementPresent(shuruKarienOnboarding.getAageBado(), 20);
+		waitTillElementPresent(shuruKarienOnboarding.getShuruKarein(), 20);
+//		waitTillElementPresent(shuruKarienOnboarding.getAageBado(), 20);
 		
 		// Tap on shuru karien button
-//		clickBtn(shuruKarienOnboarding.getShuruKarein());
-		clickBtn(shuruKarienOnboarding.getAageBado());
+		clickBtn(shuruKarienOnboarding.getShuruKarein());
+//		clickBtn(shuruKarienOnboarding.getAageBado());
 
 		// Validate the next screen is Notification Paye screen
 		isElementExist(notificatonPayeOnboarding.getNotificationPayeTxt());

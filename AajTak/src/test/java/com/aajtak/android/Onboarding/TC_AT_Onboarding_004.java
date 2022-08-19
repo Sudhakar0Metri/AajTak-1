@@ -25,8 +25,8 @@ public class TC_AT_Onboarding_004 extends Aajtak_app_Util {
 		launchApp();
 
 		// Tap on shuru karien button
-//		clickBtn(shuruKarienOnboarding.getShuruKarein());
-		clickBtn(shuruKarienOnboarding.getAageBado());
+		clickBtn(shuruKarienOnboarding.getShuruKarein());
+//		clickBtn(shuruKarienOnboarding.getAageBado());
 		isElementExist(notificatonPayeOnboarding.getNotificationPayeTxt());
 
 		// Swipe right from notification paye screen

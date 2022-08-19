@@ -21,26 +21,32 @@ public class TC_AT_HomeSec_003 extends Aajtak_app_Util{
 		launchApp();
 
 		//Complete onboard set up
-		compelteOnboarding();
+//		compelteOnboarding();
+		compelteOnboardingCopy();
 
 		//Scrolling till the story element  
-		scrollToElement(homescreen.getStoryInHomeScreen());
+//		scrollToElement(homescreen.getStoryInHomeScreen());
+//		scrollToElement(homescreen.getStoryTitleInHomeScreen());
 
 		// Story verification
-		isElementExist(homescreen.getStoryInHomeScreen(), "Story Detail");
+//		isElementExist(homescreen.getStoryInHomeScreen(), "Story Detail");
+		isElementExist(homescreen.getStoryTitleInHomeScreen(), "Story Detail");
 
 		//Scrolling till the photo element
-		scrollToElement(homescreen.getFirstGalleryInHomeScreen());
+//		scrollToElement(homescreen.getFirstGalleryInHomeScreen());
+		scrollToElement(homescreen.getFirstVideoorPhotoInHomeScreen());
 
 		// Gallery verification
-		isElementExist(homescreen.getFirstGalleryInHomeScreen(), "Image Gallery ");
+//		isElementExist(homescreen.getFirstGalleryInHomeScreen(), "Image Gallery ");
+		isElementExist(homescreen.getFirstVideoorPhotoInHomeScreen(), "Image Gallery ");
 
-		//Scrolling till the photo element
-		scrollToElement(homescreen.getFirstVideoInHomeScreen());
+//		//Scrolling till the photo element
+//		scrollToElement(homescreen.getFirstVideoInHomeScreen());
+		scrollToElement(homescreen.getFirstVideonewsInHomeScreen());
 
-		// Video verification
-		isElementExist(homescreen.getFirstVideoInHomeScreen(), "Video");
-
+//		// Video verification
+//		isElementExist(homescreen.getFirstVideoInHomeScreen(), "Video");
+		isElementExist(homescreen.getFirstVideonewsInHomeScreen(), "Video");
 	}
 
 }

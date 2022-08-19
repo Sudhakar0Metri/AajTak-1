@@ -25,10 +25,10 @@ public class TC_AT_AppLaunch_001 extends Aajtak_app_Util {
 		launchApp();
 		
 		// Validation if user is able to view shuru karien button
-//		isElementExist(shuruKarienOnboarding.getShuruKarein());
-//		clickBtn(shuruKarienOnboarding.getShuruKarein());
-		isElementExist(shuruKarienOnboarding.getAageBado());
-		clickBtn(shuruKarienOnboarding.getAageBado());
+		isElementExist(shuruKarienOnboarding.getShuruKarein());
+		clickBtn(shuruKarienOnboarding.getShuruKarein());
+//		isElementExist(shuruKarienOnboarding.getAageBado());
+//		clickBtn(shuruKarienOnboarding.getAageBado());
 	}
 
 }

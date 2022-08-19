@@ -16,8 +16,8 @@ public class ShuruKarienOnboarding {
 		PageFactory.initElements(new AppiumFieldDecorator(aDriver), this);
 	}
 
-//	@AndroidFindBy(id = "in.AajTak.headlines:id/btn_get_started")
-//	private AndroidElement shuruKarein;
+	@AndroidFindBy(id = "in.AajTak.headlines:id/btn_get_started")
+	private AndroidElement shuruKarein;
 	
 	@AndroidFindBy(xpath = "//android.widget.Button[@text=\"आगे बढ़ें\"]")
 	private AndroidElement AageBado;
@@ -28,12 +28,14 @@ public class ShuruKarienOnboarding {
 	@AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc='Aaj Tak']")
 	private AndroidElement appIcon;
 
-//	public AndroidElement getShuruKarein() {
-//		return shuruKarein;
-//	}
+	public AndroidElement getShuruKarein() {
+		return shuruKarein;
+	}
+	
 	public AndroidElement getAageBado() {
 		return AageBado;
 	}
+	
 	public AndroidElement getAppIcon() {
 		return appIcon;
 	}
